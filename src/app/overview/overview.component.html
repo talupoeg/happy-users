@@ -1,0 +1,30 @@
+<div class="users-overview">
+	<div class="users-search">
+		<input
+			type="text"
+			#searchBox
+			placeholder="search by Name"
+			(input)="onInputChange(searchBox.value)"
+		/>
+	</div>
+	<div class="users-list">
+		<table>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Company</th>
+				<th>Slogan</th>
+			</tr>
+			<ng-container *ngIf="users.length">
+				<tr *ngFor="let user of users" routerLink="/user/{{ user.id }}">
+					<td>{{ user.id }}</td>
+					<td>
+						{{ user.name }}
+					</td>
+					<td>{{ user.company.name }}</td>
+					<td>{{ user.company.bs }}</td>
+				</tr>
+			</ng-container>
+		</table>
+	</div>
+</div>

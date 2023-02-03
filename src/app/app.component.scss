@@ -1,0 +1,19 @@
+.users {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+
+	.users-header {
+		display: flex;
+		flex-direction: row;
+		
+		padding: 5px;
+		margin-bottom: 5px;
+
+		img {
+			height: 50px;
+			width: 50px;
+			margin-top: 8px;
+		}
+	}
+}

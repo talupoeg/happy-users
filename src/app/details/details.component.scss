@@ -1,0 +1,27 @@
+.users-detail {
+	padding: 10px;
+
+	.users-detail-back {
+		padding: 5px;
+		margin-bottom: 10px;
+
+		button {
+			margin: 0px;
+		}
+	}
+
+	/** HTML table */
+	table,
+	td,
+	th {
+		border: 1px solid white;
+		border-collapse: collapse;
+		font-family: "Helvetica Neue", sans-serif;
+	}
+
+	th,
+	td {
+		border-color: #051317;
+		padding: 10px;
+	}
+}

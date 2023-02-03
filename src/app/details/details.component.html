@@ -1,0 +1,25 @@
+<div class="users-detail">
+	<div class="users-detail-back">
+		<button type="button" (click)="goBack()">BACK</button>
+	</div>
+	<table>
+		<tr>
+			<th>#</th>
+			<th>Name</th>
+			<th>Username</th>
+			<th>E-Mail</th>
+			<th>City</th>
+		</tr>
+		<ng-container *ngIf="user.name">
+			<tr>
+				<td>{{ user.id }}</td>
+				<td>
+					{{ user.name }}
+				</td>
+				<td>{{ user.username }}</td>
+				<td>{{ user.email }}</td>
+				<td>{{ user.address?.city }}</td>
+			</tr>
+		</ng-container>
+	</table>
+</div>
