@@ -2,6 +2,8 @@
 
 Angular demo app for working with the `HttpClientModule`.
 
+![Happy users](https://github.com/talupoeg/happy-users/blob/main/src/assets/app-screen.png?raw=true)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
 ## Development server
